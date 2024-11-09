@@ -10,6 +10,7 @@ This project is an **Online Event Management System** built with Java, using JDB
 
 ## Project Structure
 
+```
 EventManagementSystem/
 ├── src/
 │   ├── DatabaseConnection.java      # Manages MySQL database connection
@@ -24,7 +25,7 @@ EventManagementSystem/
 ├── lib/
 │   └── gson.jar                     # Gson library for JSON handling
 └── README.md                        # Project documentation
-
+```
 Setup Instructions
 
 Prerequisites
@@ -46,7 +47,7 @@ CREATE DATABASE EventManagement;
 
 
 2. Run the SQL commands from the db/database.sql file to set up the required tables:
-
+```
 USE EventManagement;
 
 CREATE TABLE Events (
@@ -72,7 +73,7 @@ CREATE TABLE Registrations (
     FOREIGN KEY (user_id) REFERENCES Users(id),
     FOREIGN KEY (event_id) REFERENCES Events(id)
 );
-
+```
 
 3. Update DatabaseConnection.java with your MySQL credentials.
 
@@ -132,4 +133,3 @@ Event CRUD Operations: Enable admins to create, update, and delete events.
 License
 
 This project is open-source and available under the MIT License.
-
