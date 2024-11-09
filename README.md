@@ -10,7 +10,6 @@ This project is an **Online Event Management System** built with Java, using JDB
 
 ## Project Structure
 
-```plaintext
 EventManagementSystem/
 ├── src/
 │   ├── DatabaseConnection.java      # Manages MySQL database connection
